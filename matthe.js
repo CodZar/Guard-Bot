@@ -9,7 +9,7 @@ client.on("ready", () => {
     client.channels.cache.get(jahky.seskanal).join()
 })
 
-client.login(jahky.token).catch(err => {
+client.login(process.env.token).catch(err => {
     console.error("Bot Giriş Yapamadı!")
     console.error("Token Girilmemiş!")
 })
