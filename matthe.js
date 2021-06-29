@@ -20,12 +20,12 @@ client.on('message', async (msg, member) => {
 
     if (msg.content === 'sa') {
 
-        msg.reply('Aleyküm Selam Hoşgeldin ');
+        msg.reply('Aleyküm selam, hoş geldin!');
     }
 
     if (msg.content === 'sea') {
 
-        msg.reply('Aleyküm Selam Hoşgeldin ');
+        msg.reply('Aleyküm selam, hoş geldin!');
     }
 
     if (msg.content === 'hi') {
@@ -181,6 +181,6 @@ client.on("message", async message => {
             message.member.roles.remove(mutedrole);
             message.channel.send("Muten açıldı lütfen tekrar insanları etiketleme.")
         }, 900000);//9000000
-        if (message.deletable) message.delete({ timeout: 0030 }).catch(console.error);
+        if (message.deletable) message.delete({ timeout: 5000 }).catch(console.error);
     }
 });
