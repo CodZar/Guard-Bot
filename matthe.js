@@ -5,7 +5,7 @@ const jahky = require("./jahky.json")
 
 client.on("ready", () => {
     client.user.setPresence({ activity: { name: jahky.durum }, status: jahky.status })
-    console.log(`${client.user.username} Olarak Giriş Yapıldı Bot Aktif JAHKY x MATTHE`)
+    console.log(`${client.user.username} Olarak Giriş Yapıldı Bot Aktif`)
     client.channels.cache.get(jahky.seskanal).join()
 })
 
