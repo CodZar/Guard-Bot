@@ -20,12 +20,12 @@ client.on('message', async (msg, member) => {
 
     if (msg.content === 'sa') {
 
-        msg.reply('Aleyküm selam, hoş geldin!');
+        msg.reply('as');
     }
 
     if (msg.content === 'sea') {
 
-        msg.reply('Aleyküm selam, hoş geldin!');
+        msg.reply('as');
     }
 
     if (msg.content === 'hi') {
@@ -64,7 +64,7 @@ client.on("messageUpdate", async (oldMsg, newMsg) => {
 
 client.on("message", async msg => {
 
-    const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak", "am", "amcık", "amık", "yarram", "sikimi ye", "mk", "mq", "aq", "ak", "amq",];
+    const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak", "am", "amcık", "amık", "yarram", "sikimi ye", "mk", "mq", "sg", "ak", "amq",];
     if (kufur.some(word => msg.content.includes(word))) {
         try {
             if (!msg.member.permissions.has("ADMINISTRATOR")) {
